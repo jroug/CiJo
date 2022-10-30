@@ -1,0 +1,2102 @@
+// cijo custom sass variables & google fonts & variables that override bootstrap
+@import "custom_variables";
+
+// bootstrap
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+
+/*** override user agent styles ***/
+button:focus, 
+input:focus{
+	outline:0;
+}
+/*** override bootstrap general styles ***/
+.accordion > .card{
+	overflow: visible;
+}
+/*** cijo custom general styles***/
+a{
+	text-decoration: underline;
+	text-decoration-color: $cijo-blue-color !important;
+	color: $cijo-black-color;
+	&:hover{
+		color: $cijo-black-color;
+		text-decoration: none;
+	}
+}
+.bg-black{
+	background-color: $cijo-black-color;
+}
+.img-responsive{
+	width:100%;
+}
+input[type=text]{
+	padding: 10px 15px !important;
+	font-family: $font-family-second;
+	font-size: 14px;
+	line-height: 20px;
+	border:0px;
+}
+ textarea{
+	padding: 10px 15px !important;
+	font-size: 14px;
+ }
+.col-xl, 
+.col-xl-auto, 
+.col-xl-12, 
+.col-xl-11, 
+.col-xl-10, 
+.col-xl-9, 
+.col-xl-8, 
+.col-xl-7, 
+.col-xl-6, 
+.col-xl-5, 
+.col-xl-4, 
+.col-xl-3, 
+.col-xl-2, 
+.col-xl-1, 
+.col-lg, 
+.col-lg-auto, 
+.col-lg-12, 
+.col-lg-11, 
+.col-lg-10, 
+.col-lg-9, 
+.col-lg-8, 
+.col-lg-7, 
+.col-lg-6, 
+.col-lg-5, 
+.col-lg-4, 
+.col-lg-3, 
+.col-lg-2, 
+.col-lg-1, 
+.col-sm, 
+.col-sm-auto, 
+.col-sm-12, 
+.col-sm-11, 
+.col-sm-10, 
+.col-sm-9, 
+.col-sm-8, 
+.col-sm-7, 
+.col-sm-6, 
+.col-sm-5, 
+.col-sm-4, 
+.col-sm-3, 
+.col-sm-2, 
+.col-sm-1, 
+.col, 
+.col-auto, 
+.col-12, 
+.col-11, 
+.col-10, 
+.col-9, 
+.col-8, 
+.col-7, 
+.col-6, 
+.col-5, 
+.col-4, 
+.col-3, 
+.col-2, 
+.col-1,
+.col-md, 
+.col-md-auto, 
+.col-md-12, 
+.col-md-11, 
+.col-md-10, 
+.col-md-9, 
+.col-md-8, 
+.col-md-7, 
+.col-md-6, 
+.col-md-5, 
+.col-md-4, 
+.col-md-3, 
+.col-md-2, 
+.col-md-1{
+    padding-left:20px;
+    padding-right:20px;
+}
+/***--------------------needs to be part of typography--------------------***/
+h1{
+	font-size: 50px;
+	line-height: 50px;
+	margin-bottom:15px;
+}
+h2{
+    font-size: 23px;
+    line-height: 40px;
+}
+h3{
+    font-size:15px;
+}
+@include media-breakpoint-up(sm) {
+	h1 {
+	  font-size: 58px;
+	  line-height: 60px;
+	  margin-bottom: 30px;
+	}
+}
+.cijo-button {
+    background-color: $cijo-blue-color;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 700;
+    box-shadow: $cijo-box-shadow-main;
+    border: 0;
+}
+
+.cijo-mb-10{
+	margin-bottom:10px !important;
+}
+.cijo-mb-20{
+	margin-bottom:20px !important;
+}
+.cijo-mb-30{
+	margin-bottom:30px !important;
+}
+.cijo-mb-40{
+	margin-bottom:40px !important;
+}
+.cijo-mb-50{
+	margin-bottom:50px !important;
+}
+.cijo-mb-60{
+	margin-bottom:60px !important;
+}
+.cijo-mb-80{
+	margin-bottom:80px !important;
+}
+.cijo-mb-120{
+	margin-bottom:120px !important;
+}
+.clear-fix{
+	clear:both;
+}
+
+.cijo-button-arrow-right,
+.cijo-button-arrow-left {
+	width: 40px;
+	height: 40px;
+	background-position: center;
+	border:0;
+	float: left;
+	position:relative;
+	background-color: $cijo-blue-color;
+	font-size: 0;
+	line-height: 0;
+	box-shadow: $cijo-box-shadow-main;
+	&:before{
+		content: "";
+		width: 2px;
+		height: 17px;
+		position: absolute;
+		background-color: #ffffff;
+	}
+	&:after{
+		content: "";
+		width: 2px;
+		height: 17px;
+		position: absolute;
+		background-color: #ffffff;
+	}
+	&:hover{
+		background-color: #ffffff;
+		box-shadow: none;
+		&:before,
+		&:after{
+			background-color: $cijo-blue-color;
+		}
+	}
+}
+.cijo-button-arrow-right{
+	&:before{
+		top: 17px;
+		right: 17px;
+		transform: rotate(45deg);
+	}
+	&:after{
+		top: 6px;
+		right: 17px;
+		transform: rotate(-45deg);
+	}
+}
+.cijo-button-arrow-left {
+	&:before{
+		top: 17px;
+		left: 17px;
+		transform: rotate(-45deg);
+	}
+	&:after{
+		top: 6px;
+		left: 17px;
+		transform: rotate(45deg);
+	}
+}
+
+
+/***--------------------needs to be part of typography--------------------***/
+
+
+/*** FOOTER ***/
+.footer,
+footer{
+	/*** general ***/
+	font-size:14px;
+
+	.cijo-footer-main-row{
+		min-height: 340px;
+	}
+	.cijo-footer-main-row .row{
+		align-items: center;
+		justify-content: center;
+	}
+
+	p{
+		margin-bottom:10px;
+	}
+	a{
+		color:#ffffff;
+		text-decoration: underline;
+		text-decoration-color: $cijo-blue-color;
+		&:hover{
+			color:#ffffff;
+			text-decoration: none;
+		}
+	}
+	/*** top row ***/
+	.cijo-newsletter-h2{
+		text-align:center;
+		max-width: 310px;
+		width: calc(100% - 80px);
+		font-weight:bold;
+		font-size:23px;
+		line-height: 27px;
+		margin-top:45px;
+		margin-bottom:20px;
+	}		
+	.cijo-newsletter-wrapper{
+		margin-bottom:40px;
+	}
+	.cijo-newsletter-input {
+		max-width: 310px;
+		width: calc(100% - 80px);
+	}
+	// .cijo-newsletter-button {
+	// 	width: 40px;
+	// 	height: 40px;
+	// 	background-position: center;
+	// 	border:0;
+	// 	float: left;
+	// 	position:relative;
+	// 	background-color: $cijo-blue-color;
+	// 	&:before{
+	// 		content: "";
+	// 		width: 3px;
+	// 		height: 19px;
+	// 		position: absolute;
+	// 		top: 16px;
+	// 		left: 19px;
+	// 		background-color: #ffffff;
+	// 		transform: rotate(45deg);
+	// 	}
+	// 	&:after{
+	// 		content: "";
+	// 		width: 3px;
+	// 		height: 18px;
+	// 		position: absolute;
+	// 		top: 5px;
+	// 		left: 19px;
+	// 		background-color: #ffffff;
+	// 		transform: rotate(-45deg);
+	// 	}
+	// 	&:hover{
+	// 		background-color: #ffffff;
+	// 		&:before,
+	// 		&:after{
+	// 			background-color: $cijo-blue-color;
+	// 		}
+	// 	}
+	// }
+	.cijo-social{
+		margin-bottom:20px;
+	}
+	.cijo-social-link{
+		overflow: hidden;
+		text-indent: -99999px;
+		background-position: center;
+		width:43px;
+		height:44px;
+		margin:0 5px;
+		&.fb{
+			background-image: url('../images/fb.svg');
+		}
+		&.fb:after{
+			content: url('../images/fb-hover.svg');
+			width:0; 
+			height:0; 
+			overflow:hidden; 
+			z-index:-1;
+		}
+		&.fb:hover{
+			background-image: url('../images/fb-hover.svg');
+		}
+		&.tw{
+			background-image: url('../images/tw.svg');
+		}
+		&.tw:after{
+			content: url('../images/tw-hover.svg');
+			width:0; 
+			height:0; 
+			overflow:hidden; 
+			z-index:-1;
+		}
+		&.tw:hover{
+			background-image: url('../images/tw-hover.svg');
+		}
+		&.inst{
+			background-image: url('../images/inst.svg');
+		}
+		&.inst:after{
+			content: url('../images/inst-hover.svg');
+			width:0; 
+			height:0; 
+			overflow:hidden; 
+			z-index:-1;
+		}
+		&.inst:hover{
+			background-image: url('../images/inst-hover.svg');
+		}
+	}
+	.cijo-email{
+		text-decoration:underline;
+		text-decoration-color: $cijo-blue-color;
+	}
+	.cijo-separator{
+		color:$cijo-blue-color;
+		margin:0 10px;
+	}
+}
+
+/*** HEADER & NAVIGATION ***/
+header{
+	/*** logo ***/
+	.cijo-main-logo{
+		width:96px;
+	}
+
+
+	/*** search ***/
+	.cijo-search-text.open {
+		width: 490px;
+		padding: 15px;
+		box-shadow: $cijo-box-shadow-main;
+	}
+	.cijo-search-text {
+		transition: all 0.5s;
+		width: 0px;
+		position: absolute;
+		right: 4px;
+		top: 3px;
+		border: 0;
+		z-index: 10;
+	}
+	.cijo-search-wrapper{
+		position: relative;
+	}
+	.cijo-search-button {
+		width: 40px;
+		height: 40px;
+		background:#ffffff url('../images/search.svg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 25px 30px;
+		border: 0px;
+		margin-top:3px;
+		z-index: 20;
+		position: relative;
+		&.open,
+		&:hover{
+			background-color: $cijo-blue-color;
+			border: 1px solid $cijo-blue-color;
+			background-image: url('../images/search-white.svg');
+		}
+	}
+	.navbar{
+		height:116px;
+		padding:0;
+	}
+	.navbar-collapse{
+		margin-top:26px;
+	}
+	.navbar-nav{
+		margin-right: 20px;
+		margin-left:auto;
+	}
+	.nav-item{
+		align-self: flex-end;
+	}
+	ul.navbar-nav li.dropdown:hover > div.dropdown-menu {
+		display: block;    
+	}
+	.dropdown-menu{
+		left: 0px;
+		min-width: 147px;
+		margin: 2px 0px 18px 0;
+		padding:0;
+		border:0;
+		box-shadow: $cijo-box-shadow-main;
+		background-color:$cijo-black-opacity-color;
+	}
+	.dropdown-item,
+	.nav-link{
+		width:auto;
+		float:left;
+		padding-top:0px;
+		padding-bottom:0px;
+		font-size: 14px;
+		margin: 0 5px;
+		font-weight: 700;
+		text-decoration: none;
+		color: #000000 !important;
+		position: relative;
+		&:hover{
+				background-color:#ffffff;
+		}
+	}
+	.dropdown-item{
+		&:before{
+			background-color: $cijo-blue-color;
+			position: absolute;
+			content: "";
+			width: 0px;
+			height: 2px;
+			// striketrought
+			// top: 9px;
+			// left: 5px;
+			bottom: -2px;
+			left: 0px;
+			transition: all 0.3s;
+		}
+		&:hover:before {
+			width: 100%;
+		}
+	}
+	.nav-item{
+		position:relative;
+		&:before{
+			background-color: $cijo-blue-color;
+			position: absolute;
+			content: "";
+			width: 0px;
+			height: 2px;
+			// striketrought
+			// top: 9px;
+			// left: 5px;
+			bottom: -2px;
+			left: 0px;
+			transition: all 0.3s;
+		}
+		&:hover:before {
+			width: 100%;
+		}
+	}
+	.nav-link{
+		padding-left:8px!important;
+		padding-right:8px!important;
+	}
+	.dropdown-item{
+		font-weight: 400;
+		width:100%;
+		background-color: #fff;
+		margin: 0px 0px 2px 0; 
+		padding: 5px 20px;
+		font-size: 14px;
+	}
+	.dropdown-item:first-child{
+		margin-top:0px;
+		padding-top:15px;
+	}
+	.dropdown-item:last-child{
+		margin-bottom:0px;
+		padding-bottom:15px;
+	}
+	/*** burger menu for tablet and mobile  ***/
+	.cijo-button-burger {
+		display:none;
+		width: 40px;
+		height: 40px;
+		background-color: $cijo-blue-color;
+		text-indent: -9999px;
+		overflow: hidden;
+		position: absolute;
+		right: 0px;
+		z-index: 2000;
+		box-shadow: $cijo-box-shadow-main;
+		&:before {
+			content: '';
+			width: 22px;
+			height: 2px;
+			position: absolute;
+			top: 11px;
+			left: 9px;
+			background-color: #ffffff;
+			transition: transform 0.5s;
+		}
+		& span{
+			width: 22px;
+			height: 2px;
+			background-color: #ffffff;
+			position: absolute;
+			top: 19px;
+			right: 9px;
+			transition: transform 0.5s;
+		}
+		&:after{
+			content: '';
+			width: 22px;
+			height: 2px;
+			position: absolute;
+			top: 27px;
+			left: 9px;
+			background-color: #ffffff;
+			transition: transform 0.5s;
+		}
+			&.open:before {
+			top:19px;
+			transform: rotate(-45deg);
+		}
+		&.open span {
+			width:0;
+		}
+		&.open:after {
+			top:19px;
+			transform: rotate(45deg);
+		}
+	}
+}
+ 
+/*** media query down for - HEADER ***/
+@include media-breakpoint-down(md) {    
+	header{
+		.cijo-button-burger {
+			display:block;
+		}
+		.navbar-nav{
+			margin-top:80px;
+			margin-left: 30px;
+		}
+		.navbar-collapse.collapse{
+			background-color: #000;
+			position: fixed;
+			z-index: 100;
+			top: -27px;
+			right: 0;
+			width: 100%;
+			max-width: 350px;
+			height: 100vh;
+			transform: translate(100%, 0px);
+			transition: transform 0.4s;
+			overflow: hidden;
+			&.open{
+				display:block;
+				transform: translate(0, 0px);
+			}
+		}
+		.dropdown-menu{
+			background-color: transparent;
+			.show {
+				display:inline-block;
+				width:100%;
+			}
+		}
+		.form-inline{
+			float:left;
+			width:100%;
+		}
+		.cijo-search-wrapper{
+			width:100%;
+			margin: 10px 20px;
+		}
+		.cijo-search-button{
+			float: right;
+			background-color: $cijo-blue-color;
+			border: 1px solid $cijo-blue-color;
+			background-image: url(../images/search-white.png);
+		}
+		.cijo-search-text{
+			width:100%;
+			max-width:100%;
+		}
+
+		.nav-item{
+			margin: 7px 24px 7px 0px;
+			width: 100%;
+		}
+		.nav-link{
+			color:#ffffff !important;
+			font-size: 20px  !important;
+			line-height: 20px  !important;
+		}
+		.dropdown-item{
+			background-color: #000000 !important;;
+			color:#ffffff !important;
+			font-size: 18px  !important;
+			line-height: 18px  !important;
+			margin-top:0px;
+			&:last-child{
+				padding-bottom:0;
+			}
+		}
+ 
+		.nav-link:hover, 
+		.nav-item:hover,
+		.dropdown-item:hover, 
+		.dropdown-item:focus{
+			background: transparent;
+			&:before{
+				display:none;
+			}
+			&:hover:before{
+				display:none;
+			}
+		}
+		.cijo-button-burger.open {
+			position: fixed;
+			right: 20px;
+		}
+   }
+}
+
+/*** MAIN ***/
+main{
+	margin-top: 60px;
+	// margin-bottom: 120px;
+}
+section {
+	margin-bottom: 120px;
+	/*** general ***/
+	p{
+		font-size:15px;
+		font-family: $font-family-second;
+		font-weight:400;
+		line-height:20px;
+		letter-spacing: 0.2px;
+	}
+	/*** 01.Home ***/
+	.cijo-top-slider{
+		max-width: 540px;
+		float: right;
+	}
+	.cijo-brands-slider {
+		width: 100%;
+		margin: 0 auto;
+		.slick-slide{
+			text-align:center;
+		}
+	}
+	.cijo-brands-prev{
+		// background-image:url('../images/arrow-previous-inactive.png');
+		background-color:transparent;
+		left: 0 !important;
+		position: relative !important;
+		float:left;
+		&:before{
+			content: "";
+			width: 3px;
+			height: 38px;
+			top: -5px;
+			right: 10px;
+			position: absolute;
+			background-color: $cijo-blue-color;
+			transform: rotate(45deg);
+		}
+		&:after{
+			content: "";
+			width: 3px;
+			height: 38px;
+			top: 21px;
+			right: 11px;
+			position: absolute;
+			background-color: $cijo-blue-color;
+			transform: rotate(-45deg);
+		}
+		&:hover{
+			&:before,
+			&:after{
+				background-color: $cijo-black-color;
+			}
+		}
+	}
+	.cijo-brands-next{
+		// background-image:url('../images/arrow-next-inactive.png');
+		background-color:transparent;
+		right: 0 !important;
+		position: relative !important;
+		float:right;
+		&:before{
+			content: "";
+			width: 3px;
+			height: 38px;
+			top: -5px;
+			right: 10px;
+			position: absolute;
+			background-color: $cijo-blue-color;
+			transform: rotate(-45deg);
+		}
+		&:after{
+			content: "";
+			width: 3px;
+			height: 38px;
+			top: 21px;
+			right: 11px;
+			position: absolute;
+			background-color: $cijo-blue-color;
+			transform: rotate(45deg);
+		}
+		&:hover{
+			&:before,
+			&:after{
+				background-color: $cijo-black-color;
+			}
+		}
+	}
+	.cijo-slider-wrapper{
+		position: relative;
+		// margin-left: -20px;
+		// margin-right: -20px;
+	}
+	.cijo-slider-info {
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+		right: 0;
+		h1 {
+			width: 100%;
+			background-color: rgb(255, 255, 255, 0.9);
+			font-size: 58px;
+			font-weight: 700;
+			padding: 10px 20px 20px 20px;
+			letter-spacing: 2px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+	}
+	.cijo-slide{
+		margin-left: -65px;
+		padding: 0 65px 0 0;
+		img{
+			object-fit: cover;
+			min-height:550px;
+		}
+	}
+	.cijo-slider-text{
+		float: right;
+		width: 100%;
+		padding-top: 20px;
+		background-color: rgb(255, 255, 255, 0.9);
+	}
+	.cijo-slider-learnmore {
+		float: left;
+		width: 275px;
+		margin-top: 5px;
+		font-size: 14px;
+		font-weight: 700;
+		text-decoration: none;
+		color: #000000;
+		position: relative;
+		padding-bottom:10px;
+		&:after {
+			position: absolute;
+			content: '';
+			height: 2px;
+			width: 80px;
+			background-color: $cijo-blue-color;
+			top: 9px;
+			right: 5px;
+			transition: width 0.3s;
+		}
+		&:hover:after {
+			width:100%;
+		}
+	}
+	.cijo-services-image-wrapper{
+		position:relative;
+		min-height:350px;
+		height:100%;
+		img {
+			right:1px;
+			opacity: 0;
+			position: absolute;
+			transition: 0.5s all;
+			top:50%;
+			transform:translate(0, -50%);
+			&.active-image{
+				opacity: 1;
+			}
+		}
+	}
+	.cijo-services-list{
+		list-style: none;
+	}
+	&.cijo-services .accordion .card {
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+	.cijo-services-h2{
+		float: left;
+		width: calc(100% - 50px);
+		margin-bottom: 0;
+	}
+	.cijo-services-text{
+		p{
+			margin-bottom: 10px;
+		}
+	}
+	.button-open-services {
+		box-shadow: $cijo-box-shadow-main;
+		color: #000000;
+		font-size: 15px;
+		width: 40px;
+		height: 40px;
+		background-color: $cijo-blue-color;
+		text-indent: -9999px;
+		overflow: hidden;
+		float:right;
+		position: relative;
+		&:before {
+			content: '';
+			width: 2px;
+			height: 22px;
+			position: absolute;
+			top: 8px;
+			left: 18px;
+			background-color: #ffffff;
+			transition: transform 0.5s;
+			transform: rotate(-90deg);
+		}
+		&:after {
+			content: '';
+			width: 22px;
+			height: 2px;
+			position: absolute;
+			top: 18px;
+			left: 8px;
+			background-color: #ffffff;
+		} 
+		&.focus,
+		&:focus{
+			box-shadow: $cijo-box-shadow-main;
+		}
+		&:hover{
+			background-color: #ffffff;
+			box-shadow: none;
+			transition: none;
+			&:before,
+			&:after{
+				background-color: $cijo-blue-color;
+			}
+			&.focus,
+			&:focus{
+				box-shadow: none;
+			}
+		}
+		&.collapsed:before {
+				transform: rotate(0deg);
+		}
+	}
+	.cijo-services-learnmore{
+		float: left;
+		width: 195px;
+		margin-top: 20px;
+		font-size: 14px;
+		font-weight: 700;
+		text-decoration: none;
+		color: #000000;
+		position: relative;
+		&:after {
+			position: absolute;
+			content: '';
+			height: 2px;
+			width: 80px;
+			background-color: $cijo-blue-color;
+			top: calc(50% - 2px);
+			right: 5px;
+		}
+	}
+	.card{
+		.cijo-services-separator {
+			border-bottom: 2px solid #e5e5e5;
+			transition: all 0.5s;
+			width: 100%;
+			position: absolute;
+			right: 0;
+			bottom: -2px;
+		}
+		&.active{
+			.cijo-services-separator{
+				width: 130%;
+				border-bottom: 2px solid $cijo-blue-color;
+			}
+		}
+	}
+	.cijo-blog-seeall {
+		float: left;
+		width: 156px;
+		margin-top: 10px;
+		font-size: 14px;
+		font-weight: 700;
+		text-decoration: none;
+		color: #000000;
+		position: relative;
+		&:after {
+			position: absolute;
+			content: '';
+			height: 2px;
+			width: 80px;
+			background-color: $cijo-blue-color;
+			top: 9px;
+			right: 5px;
+			transition: width 0.3s;
+		}
+		&:hover:after {
+			width: 100%;
+		}
+	}
+	/*** 02.ABOUT ***/
+	.cijo-team-thumb-wrapper{
+		margin:0 20px;
+		.cijo-team-thumb{
+			padding:0;
+		}
+	}
+	.cijo-about-slider-wrapper{
+		position: relative;
+		
+	}
+	.cijo-about-slider-prev{
+		position: absolute;
+		right: 41px;
+		bottom: -41px;
+	}
+	.cijo-about-slider-next{
+		position: absolute;
+		right: 0px;
+		bottom: -41px;
+	}
+	.cijo-who-we-are-thumb-slider-wrapper{
+		position: relative;
+		margin:40px 0 0;
+	}
+	.cijo-who-we-are-thumb-slider-prev{
+		position: absolute;
+		left: 0px;
+		top:50%;
+		transform: translate(0, -50%);
+		z-index: 10;
+	}
+	.cijo-who-we-are-thumb-slider-next{
+		position: absolute;
+		right: 0px;
+		top:50%;
+		transform: translate(0, -50%);
+		z-index: 10;
+	}
+	/*** 03.PROJECTS ***/
+	&.cijo-projects-section{
+		margin-bottom:60px;
+	}
+	.cijo-grid-filters-wrapper{
+		margin-bottom:40px;
+	}
+	.iso-filters {
+		list-style-type: none;
+		padding-left:0;
+		margin-bottom:0;
+		float: left;
+		li {
+			display:inline;
+			float:left;
+			line-height: 20px;
+			a {
+				font-size: 14px;
+				font-weight: 700;
+				margin: 0 30px 0 0;
+				text-decoration: none;
+				color: $cijo-black-color;
+				position: relative;
+				&:before{
+					background-color: $cijo-blue-color;
+					position: absolute;
+					content: "";
+					width: 0px;
+					height: 2px;
+					// striketrought
+					// top: 9px;
+					// left: 5px;
+					bottom: -2px;
+					left: 0px;
+					transition: all 0.3s;
+				}
+				&:hover:before {
+					width: 100%;
+				}
+				&.selected:before {
+					width: 100%;
+				}
+			}
+		}
+	}
+	.cijo-grid-item{
+		padding-top:20px;
+		padding-bottom:20px;
+		.cijo-project-box{
+			position: relative;
+		}
+		.cijo-project-title{
+			position: absolute;
+			font-size: 23px;
+			line-height: 22px;
+			font-weight: 700;
+			z-index: 30;
+			top: 50px;
+			left: 50px;
+		}
+		.even-box {
+			margin-top:-80px;
+		}
+		.odd-box {
+			margin-top:0px;
+		}
+		.cijo-project-thumb {
+			position:relative;
+			&:hover .cijo-project-info {
+				opacity: 1;
+			}
+		}
+		.cijo-project-info {
+			height: calc(100% - 60px);
+			width: calc(100% - 60px);
+			transition: opacity 0.5s;
+			opacity: 0;
+			position: absolute;
+			z-index: 20;
+			background-color: #ffffffce; 
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			.cijo-project-category {
+				position: absolute;
+				bottom: 18px;
+				left: 20px;
+				font-size: 16px;
+				line-height: 16px;
+			}
+			.cijo-project-date {
+				position: absolute;
+				bottom: 18px;
+				right: 20px;
+				font-size: 16px;
+				line-height: 16px;
+			}
+		}
+ 
+		
+	}
+	.cijo-brands-item-wrapper{
+		max-width:800px;
+		min-width:728px;
+		img{
+			width:140px;
+			// border:1px solid red;
+		}
+	}
+	.cijo-brands-item{
+		text-align:center;
+		&:nth-child(1){
+			border-bottom:1px solid #e5e6e6;
+			border-right:1px solid #e5e6e6;
+		}
+		&:nth-child(2){
+			border-bottom:1px solid #e5e6e6;
+			border-right:1px solid #e5e6e6;
+		}
+		&:nth-child(3){
+			border-bottom:1px solid #e5e6e6;
+			border-right:1px solid #e5e6e6;
+		}
+		&:nth-child(4){
+			border-bottom:1px solid #e5e6e6;
+		}
+		&:nth-child(5){
+			border-right:1px solid #e5e6e6;
+		}
+		&:nth-child(6){
+			border-right:1px solid #e5e6e6;
+		}
+		&:nth-child(7){
+			border-right:1px solid #e5e6e6;
+		}
+		&:nth-child(8){
+			border:0px;
+		}
+	}
+	/*** 04.PROJECT PRESENTATION ***/
+	.cijo-project-info-wrapper {
+		h2{
+			line-height: 30px;
+		}
+		h3{
+			margin-top: 22px;
+			margin-bottom:0;
+			float: left;
+			width:100%;
+		}
+	 	span {
+			font-size: 15px;
+			font-family: $font-family-second;
+			line-height: 20px;
+			float: left;
+		}
+		b{
+			font-size: 15px;
+			margin:0 5px 0 0;
+			float: left;
+		}
+	}
+	.cijo-buttons-prev{
+		// background: url('../images/arrow-prev.png') center left $cijo-blue-color no-repeat;
+		font-weight: 700;
+		color: #ffffff;
+		padding: 10px 20px;
+		width: 220px;
+		font-size: 15px;
+		text-align: right;
+		float: left;
+		border: 0;
+		&:hover{
+			color:$cijo-blue-color;
+		}
+	}
+	.cijo-buttons-next {
+		// background: url('../images/arrow-next.png') center right $cijo-blue-color no-repeat;
+		font-weight: 700;
+		color: #ffffff;
+		padding: 10px 20px;
+		width: 220px;
+		font-size: 15px;
+		text-align: left;
+		float: right;
+		border: 0;
+		&:hover{
+			color:$cijo-blue-color;
+		}
+	}
+	.cijo-project-quote-wrapper p {
+		font-family: $font-family-base;
+		max-width: 485px;
+		float: left;
+		font-size: 23px;
+		color: $cijo-blue-color;
+		font-weight: 700;
+		border-left: 2px solid $cijo-black-color;
+		padding-left: 20px;
+		line-height: 28px;
+	}
+	.cijo-project-buttons-wrapper {
+		width: 441px;
+		position: absolute;
+		top: 80px;
+		left: 50%;
+		transform: translate(-50%, 0%);
+	}
+	.cijo-project-slider-wrapper{
+		position:relative;
+	}
+	.cijo-project-slider-prev{
+		position:absolute;
+		right: 0px;
+		top:50%;
+		transform: translate(50%, calc(25% + 1px));
+		z-index:10;
+	}
+	.cijo-project-slider-next{
+		position:absolute;
+		right: 0px;
+		top:50%;
+		transform: translate(50%, -75%);
+		z-index:10;
+	}
+	/*** 05.Blog ***/
+	.cijo-post-box{
+		margin-bottom:35px;
+		.cijo-post-date {
+			font-size: 15px;
+			font-family: $font-family-second;
+			color: $cijo-black-color;
+			margin: 30px 0 7px;
+		}
+		.cijo-post-title {
+			line-height: 28px;
+			a{
+				text-decoration:none;
+				&:hover{
+					text-decoration:underline;
+				}
+			}
+			
+		}
+	}
+	.cijo-blog-pagination {
+		margin-top:30px;
+		ul {
+			display: table;
+			margin: 0 auto;
+			li {
+				display: table-cell;
+				margin: 1px 1px 0 0;
+				float: left;
+				a {
+					text-decoration: none;
+					font-size: 16px;
+					font-weight: 700;
+					color: $cijo-blue-color;
+					border: 1px solid #e5e5e5;
+					width: 38px;
+					height: 38px;
+					display: table-cell;
+					vertical-align: middle;
+					text-align: center;
+					&.prev {
+						// width: 38px;
+						// height: 38px;
+						text-indent: -9999px;
+						overflow: hidden;
+						margin-top: 0px;
+						float: left;
+						border:0;
+						&:hover{
+							border: none;
+						}
+					}
+					&.next {
+						// width: 38px;
+						// height: 38px;
+						text-indent: -9999px;
+						overflow: hidden;
+						margin-top: 0px;
+						float: left;
+						border:0;
+						&:hover{
+							border: none;
+						}
+					}
+					&:hover{
+						border: 1px solid $cijo-blue-color;
+					}
+					&.active{
+						border: 1px solid $cijo-blue-color;
+					}
+				}
+			}
+		}
+
+	}
+	/*** 06.BlogInner ***/
+	// &.cijo-bloginner-section{
+	// 	margin-bottom:120px;
+	// }
+	.cijo-post-category{
+		font-size: 14px;
+		font-weight: 700;
+	}
+	.cijo-post-inner{
+		.cijo-post-date {
+			float:left;
+			font-size: 15px;
+			font-family: $font-family-second;
+			color: $cijo-black-color;
+			margin: 0px 0 7px;
+		}
+		.cijo-post-author {
+			float: right;
+			font-size: 15px;
+			font-family: $font-family-second;
+			color: $cijo-black-color;
+			margin: 0px 0 7px;
+			a {
+				text-decoration: none;
+				color: $cijo-blue-color;
+			}
+		}
+		.cijo-post-share-buttons {
+			float: left;
+			margin-top: 15px;
+		}
+		.cijo-post-text-wrapper {
+			float: left;
+			margin-top: 30px;
+		}
+		.cijo-post-h2{
+			clear: both;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+		.cijo-post-quote p{
+			font-family: $font-family-base;
+			max-width: 485px;
+			float: left;
+			font-size: 23px;
+			color: $cijo-blue-color;
+			font-weight: 700;
+			border-left: 2px solid $cijo-black-color;
+			padding-left: 20px;
+			line-height: 28px;
+			margin: 30px 0 40px 0px;
+			clear: both;
+		}
+		.cijo-post-list {
+			float: left;
+			font-size: 15px;
+			font-family: $font-family-second;
+			line-height: 20px;
+			list-style: none;
+			padding: 0;
+			margin-top: 20px;
+			li {
+				position: relative;
+				padding-left: 20px;
+				margin: 7px 0;
+				&:before {
+					content: "•";
+					color: $cijo-blue-color;
+					font-size: 38px;
+					position: absolute;
+					left: 0px;
+				}
+			}
+		}
+		.cijo-post-tags {
+			margin: 30px 0;
+			width: 100%;
+			float: left;
+			padding: 0;
+			margin-top: 20px;
+			list-style: none;
+			li a {
+				float: left;
+				display: inline;
+				padding: 10px;
+				border: 1px solid #e5e5e5;
+				color: $cijo-black-color;
+				text-decoration: none;
+				font-size: 12px;
+				line-height: 12px;
+				margin-right: 1px;
+				margin-bottom: 1px;
+			}
+		}
+		.cijo-comment-image {
+			float: left;
+			background: #e5e5e5;
+			height: 65px;
+			width: 65px;
+			border-radius: 65px;
+			margin-top: -8px;
+		}
+		.cijo-comment-info{
+			margin-left: 77px;
+			h5 {
+				font-size: 14px;
+				font-weight: 700;
+				float: left;
+				margin-bottom:0;
+				line-height: 20px;
+			}
+			p {
+				padding-top: 25px;
+				line-height: 20px;
+				font-size: 15px;
+				margin-bottom:0;
+			}
+			span {
+				line-height: 20px;
+				font-size: 14px;
+				float: left;
+				margin-left: 25px;
+			}
+			a {
+				font-size: 14px;
+				line-height: 20px;
+				font-weight: 700;
+				color: $cijo-blue-color;
+				float: right;
+				text-decoration: none;
+				position: relative;
+				padding-right: 25px;
+				&:after {
+					content: '';
+					width: 21px;
+					height: 21px;
+					position: absolute;
+					top: 0px;
+					right: 0px;
+					background-image: url(../images/comment-bubble.png);
+					background-repeat: no-repeat;
+				}
+			}
+		}
+		.cijo-comments-list {
+			float: left;
+			width: 100%;
+			list-style: none;
+			padding:0;
+		 	li {
+				float: left;
+				padding: 25px 0;
+				border-top: 1px solid #e5e5e5;
+				&:first-child {
+					border-top: 2px solid #e5e5e5;
+				}
+				&:last-child {
+					border-bottom: 1px solid #e5e5e5;
+				}
+			}
+		}
+		.cijo-comment-answer-list {
+			margin-left: 77px;
+			margin-top: 25px;
+			list-style: none;
+			li{
+				&:first-child {
+					border-top: 1px solid #e5e5e5;
+				}
+				&:last-child {
+					padding-bottom: 0;
+					border-bottom: 0;
+				}
+			}
+		}
+		.cijo-comment-avatar {
+			margin: 12px 0px 0 12px;
+			vertical-align: middle;
+		}
+		.cijo-comment-form-wrapper{
+			padding:0;
+			float: left;
+		}
+	}
+	.cijo-post-buttons-wrapper {
+		width: 441px;
+		position: absolute;
+		top: 80px;
+		left: 50%;
+		transform: translate(-50%, 0%);
+	}
+	/*** 07.FAQ ***/
+	.cijo-desc{
+		padding-top:10px;
+		margin-bottom:0;
+	}
+	.cijo-faq-h2{
+		float:left;
+		width:calc(100% - 50px);
+	}
+	.cijo-faq-text p:last-child{
+		margin-bottom:0;
+	}
+	.accordion{
+		padding-top:20px;
+		.border-bottom{
+			border-width:2px !important;
+		}
+		.border-bottom.active{
+			border-color:$cijo-blue-color !important;
+		}
+	}
+	.accordion{
+		.card-body{
+			width:calc(100% - 55px);
+		}
+		.card{
+			padding-bottom:30px;
+			padding-top:30px;
+		}
+		.card-title{
+			margin:0;
+		}
+		.button-open-faq {
+			box-shadow: $cijo-box-shadow-main;
+			color: #000000;
+			font-size: 15px;
+			width: 40px;
+			height: 40px;
+			background-color: $cijo-blue-color;
+			text-indent: -9999px;
+			overflow: hidden;
+			float:right;
+			position: relative;
+			&:before {
+				content: '';
+				width: 2px;
+				height: 22px;
+				position: absolute;
+				top: 8px;
+				left: 18px;
+				background-color: #ffffff;
+				transition: transform 0.5s;
+				transform: rotate(-90deg);
+			}
+			&:after {
+				content: '';
+				width: 22px;
+				height: 2px;
+				position: absolute;
+				top: 18px;
+				left: 8px;
+				background-color: #ffffff;
+			} 
+			&.focus,
+			&:focus{
+				box-shadow: $cijo-box-shadow-main;
+			}
+			&:hover{
+				background-color: #ffffff;
+				box-shadow: none;
+				transition: none;
+				&:before,
+				&:after{
+					background-color: $cijo-blue-color;
+				}
+				&.focus,
+				&:focus{
+					box-shadow: none;
+				}
+			}
+			&.collapsed:before {
+					transform: rotate(0deg);
+			}
+		}
+	}
+	/*** 08.CONTACT ***/
+	.cijo-contact-address{
+		background: url(../images/pin.svg) no-repeat center left 4px ;
+		padding-left: 25px;
+	}
+	.cijo-contact-phone{
+		background: url(../images/phone.svg) no-repeat center left;
+		padding-left:25px;
+	}
+	.cijo-contact-email{
+		background: url(../images/mail.svg) no-repeat center left;
+		padding-left: 25px;
+	}
+	.cijo-contact-form-wrapper{
+		margin-top:65px;
+	}
+	.cijo-form-element-wrapper {
+		margin-bottom:20px;
+		padding-left:0;
+		padding-right:0;
+		&.cijo-form-element-left{
+			padding-right:20px;
+		}
+		&.cijo-form-element-right{
+			padding-left:20px;
+		}
+		label {
+			margin: 5px 0;
+			width: 100%;
+			float: left;
+			font-size: 14px;
+			font-weight: 700;
+		}
+		input {
+			width: 100%;
+			float: left;
+			background-color: rgb(241, 241, 241);
+			border: 0;
+			padding: 10px;
+		}
+		textarea {
+			width: 100%;
+			float: left;
+			background-color: rgb(241, 241, 241);
+			border: 0;
+			height: 172px;
+		}
+	}
+	/*** 09.TEAM ***/
+	.cijo-team-box {
+		position: relative;
+	}
+	.cijo-team-thumb{
+		padding:40px 0 0;
+	}
+	.cijo-team-info {
+		transition: background-color 0.5s;
+		position: absolute;
+		z-index: 20;
+		background-color: transparent;
+		height: calc(100% - 40px);
+		width: calc(100% - 40px);
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.cijo-team-social {
+		position: absolute;
+		top: 0px;
+		right: 10px;
+	}
+	.cijo-team-info:hover {
+		background-color: #ffffffce;
+	}
+	.cijo-team-name {
+		font-size: 18px;
+		line-height:16px;
+		font-weight: 700;
+		position: absolute;
+		bottom: 10px;
+		left: 10px;
+	}
+	.cijo-email-icon {
+		float: right;
+		margin-top: 3px;
+		margin-left: 10px;
+	}
+	.cijo-team-row{
+		margin-top:25px;
+	}
+	/*** 10. SERVICES ***/
+	.cijo-services-page-image-wrapper{
+		margin-bottom:30px;
+	}
+	.cijo-services-row{
+		margin-top:60px;
+	}
+	.cijo-margin-top-service{
+		margin-top:120px;
+	}
+}
+/*** ASIDE ***/
+aside{
+	/*** widget all ***/
+	.cijo-widget {
+		margin-bottom: 30px;
+		float: left;
+		width: 100%;
+		&:last-child{
+			margin-bottom:0;
+		}
+		ul {
+			margin-top: 15px;
+			li{
+				&:first-child{
+					margin-top:0;
+				}
+			}
+		}
+	}
+	.cijo-widget-title {
+		font-size: 23px;
+		font-weight: 700;
+		border-bottom: 2px solid #e5e5e5;
+		padding-bottom: 10px;
+		margin-bottom: 5px;
+		float: left;
+		width: 100%;
+	}
+	/*** widget categories/archive ***/
+	.cijo-widget-categories,
+	.cijo-widget-archive {
+		ul {
+			float: left;
+			width: 100%;
+			list-style: none;
+			padding: 0;
+			li {
+				margin: 10px 0;
+				line-height: 14px;
+				font-size: 14px;
+				a {
+					font-weight: 700;
+					color: #000000;
+					text-decoration: none;
+					&:hover{
+						text-decoration: underline;
+						text-decoration-color: $cijo-blue-color;
+					}
+				}
+				span {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	.cijo-widget-archive ul li {
+		padding: 0 0 10px 0;
+		border-bottom: 1px solid #e5e5e5;
+	}
+	/*** widget news ***/
+	.cijo-widget-news {
+		ul {
+			float: left;
+			width: 100%;
+			list-style: none;
+			padding: 0;
+			li{
+				margin-top:20px;
+				float: left;
+			}
+		}
+		.cijo-news-image-wrapper {
+			float: left;
+			margin-right: 10px;
+			width: 20%;
+		}
+		.cijo-widget-news-info {
+			float: left;
+			width: calc(80% - 10px);
+			span{
+				font-size: 13px;
+				float: left;
+				width: 100%;
+			}
+			h3{
+				&:hover{
+					text-decoration: underline;
+					text-decoration-color:$cijo-blue-color;
+				}
+			}
+		}
+
+	}
+	/*** widget tags ***/
+	.cijo-widget-tags {
+		ul {
+			float: left;
+			width: 100%;
+			list-style: none;
+			padding: 0;
+			li a {
+				float: left;
+				display: inline;
+				padding: 10px;
+				border: 1px solid #e5e5e5;
+				color: #000000;
+				text-decoration: none;
+				font-size: 12px;
+				line-height: 12px;
+				margin-right: 1px;
+				margin-bottom: 1px;
+				&:hover{
+					border: 1px solid $cijo-blue-color;
+				}
+			}
+		}
+	}
+
+
+}
+ 
+ 
+/*** media query md down ***/
+@include media-breakpoint-down(md) {
+	/*** cijo custom general styles***/
+	.col-xl, 
+	.col-xl-auto, 
+	.col-xl-12, 
+	.col-xl-11, 
+	.col-xl-10, 
+	.col-xl-9, 
+	.col-xl-8, 
+	.col-xl-7, 
+	.col-xl-6, 
+	.col-xl-5, 
+	.col-xl-4, 
+	.col-xl-3, 
+	.col-xl-2, 
+	.col-xl-1, 
+	.col-lg, 
+	.col-lg-auto, 
+	.col-lg-12, 
+	.col-lg-11, 
+	.col-lg-10, 
+	.col-lg-9, 
+	.col-lg-8, 
+	.col-lg-7, 
+	.col-lg-6, 
+	.col-lg-5, 
+	.col-lg-4, 
+	.col-lg-3, 
+	.col-lg-2, 
+	.col-lg-1, 
+	.col-sm, 
+	.col-sm-auto, 
+	.col-sm-12, 
+	.col-sm-11, 
+	.col-sm-10, 
+	.col-sm-9, 
+	.col-sm-8, 
+	.col-sm-7, 
+	.col-sm-6, 
+	.col-sm-5, 
+	.col-sm-4, 
+	.col-sm-3, 
+	.col-sm-2, 
+	.col-sm-1, 
+	.col, 
+	.col-auto, 
+	.col-12, 
+	.col-11, 
+	.col-10, 
+	.col-9, 
+	.col-8, 
+	.col-7, 
+	.col-6, 
+	.col-5, 
+	.col-4, 
+	.col-3, 
+	.col-2, 
+	.col-1,
+	.col-md, 
+	.col-md-auto, 
+	.col-md-12, 
+	.col-md-11, 
+	.col-md-10, 
+	.col-md-9, 
+	.col-md-8, 
+	.col-md-7, 
+	.col-md-6, 
+	.col-md-5, 
+	.col-md-4, 
+	.col-md-3, 
+	.col-md-2, 
+	.col-md-1{
+		padding-left:15px;
+		padding-right:15px;
+	}
+	.cijo-main-container {
+		padding-right: 20px !important;
+		padding-left: 20px !important;
+	}
+	/*** MAIN ***/
+	section {
+		/*** 01.HOME ***/
+		.cijo-slide{
+			margin-left: 0px;
+			padding: 0 0px 0 0;
+			img{
+				width: calc(100% + 10px);
+				margin-left: -5px;
+			}
+		}
+		.cijo-slider-info {
+			position: relative;
+			top: unset;
+			transform: translate(0, -90px);
+			right: -5px;
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.cijo-services-image-wrapper{
+			img{
+				top:50%;
+				left:50%;
+				transform:translate(-50%, -50%);
+			}
+		}
+		/*** 03.PROJECTS ***/
+		.iso-filters{
+			padding-bottom:20px;
+		}
+		.cijo-grid-item{
+			.even-box {
+				margin-top:-60px;
+			}
+		}
+		/*** 06.BLOG INNER ***/
+		.cijo-comment-form-wrapper{
+			margin-bottom:90px;
+		}
+		/*** 08.CONTACT ***/
+		.cijo-form-element-wrapper {
+			&.cijo-form-element-left{
+				padding-right:15px;
+			}
+			&.cijo-form-element-right{
+				padding-left:15px;
+			}
+		}
+	}
+}
+
+
+/*** media query sm down ***/
+@include media-breakpoint-down(sm) { 
+	/*** MAIN ***/
+	main{
+		margin-top:15px;
+		// margin-bottom:80px;
+	}
+	section {
+		margin-bottom:80px;
+		/*** 01.HOME ***/
+		.cijo-slider-info {
+			position:absolute;
+			transform: translate(0, 0);
+			bottom:0;
+		}
+	    .cijo-slider-wrapper{
+			// margin-right: -20px;
+		  margin-left: -25px;
+		}
+		.cijo-services-image-wrapper{
+			img{
+				max-width:100%;
+			}
+		}
+		.card.active {
+			.cijo-services-separator {
+				width:100%;
+			}
+		}
+		/*** 02.ABOUT ***/
+		.cijo-who-we-are-thumb-slider-wrapper{
+			margin:20px 0 0;
+		}
+		/*** 03.PROJECTS ***/
+		&.cijo-projects-section{
+			margin-bottom:70px;
+		}
+		.cijo-grid-item{
+			padding-top: 10px;
+    		padding-bottom: 10px;
+			.even-box {
+				margin-top:0px;
+			}
+		}
+		.cijo-grid-filters-wrapper{
+			margin-bottom:0;
+		}
+		.cijo-brands-item-wrapper{
+			max-width: unset;
+			min-width: 300px;;
+			img{
+				width:125px;
+			}
+		}
+		.cijo-brands-item{
+			padding: 0;
+			&:nth-child(1){
+				border-bottom:1px solid #e5e6e6;
+				border-right:1px solid #e5e6e6;
+			}
+			&:nth-child(2){
+				border-bottom:1px solid #e5e6e6;
+				border-right:0px;
+			}
+			&:nth-child(3){
+				border-bottom:1px solid #e5e6e6;
+				border-right:1px solid #e5e6e6;
+			}
+			&:nth-child(4){
+				border-bottom:1px solid #e5e6e6;
+				border-right:0px;
+			}
+			&:nth-child(5){
+				border-bottom:1px solid #e5e6e6;
+				border-right:1px solid #e5e6e6;
+			}
+			&:nth-child(6){
+				border-bottom:1px solid #e5e6e6;
+				border-right:0px;
+			}
+			&:nth-child(7){
+				border-right:1px solid #e5e6e6;
+			}
+			&:nth-child(8){
+				border:0px;
+			}
+		}
+		/*** 04.PROJECT PRESENTATION ***/
+		.cijo-project-buttons-wrapper {
+			top: 40px;
+		}
+		/*** 06.BLOG INNER ***/
+		.cijo-post-buttons-wrapper {
+			top: 40px;
+		}
+		.cijo-comment-form-wrapper{
+			.cijo-form-element-wrapper {
+				&.cijo-form-element-left{
+					padding-right:0px;
+				}
+				&.cijo-form-element-right{
+					padding-left:0px;
+				}
+			}
+		}
+		/*** 07.FAQ ***/
+		.accordion{
+			padding-top:0px;
+		}
+		/*** 08.CONTACT ***/
+		.cijo-contact-form-wrapper{
+			margin-top:35px;
+		}
+		.cijo-form-element-wrapper {
+			&.cijo-form-element-left{
+				padding-right:15px;
+			}
+			&.cijo-form-element-right{
+				padding-left:15px;
+			}
+		}
+		/*** 09.TEAM ***/
+		.cijo-team-thumb{
+			padding:20px 0 0;
+		}
+		.cijo-team-row{
+			margin-top:25px;
+		}
+	}
+}
+
+@include media-breakpoint-down(xs) { 
+	/*** MAIN ***/
+	section {
+		/*** 04.PROJECT PRESENTATION ***/
+		.cijo-project-buttons-wrapper {
+			width:100%;
+		}
+		.cijo-buttons-next{
+			width: 50%;
+		}
+		.cijo-buttons-prev {
+			width: 50%;
+			margin-left: -1px;
+		}
+		/*** 05.Blog ***/
+		.cijo-post-box{
+			margin-bottom:15px;
+			.cijo-post-date {
+				margin: 20px 0 7px;
+			}
+		}
+		.cijo-blog-pagination {
+			margin-top: 10px;
+		}
+		/*** 06.BLOG INNER ***/
+		.cijo-post-buttons-wrapper {
+			width:100%;
+		}
+		/*** 10.SERVICES ***/
+		.cijo-services-row{
+			margin-top:10px;
+		}
+		.cijo-services-page-col{
+			margin-top:60px;
+		}
+	}
+}
+

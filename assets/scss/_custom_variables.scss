@@ -1,0 +1,40 @@
+
+// website fonts
+@import url('https://fonts.googleapis.com/css?family=Prompt:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+// cijo main colors
+$cijo-blue-color: #3300ff;
+$cijo-black-color: #000000;
+$cijo-black-opacity-color: #00000033;
+
+// container
+$container-max-widths: (
+    xl: 1260px
+
+    // sm: 540px,
+    // md: 720px,
+    // lg: 960px,
+    // xl: 1140px
+
+);
+
+// body
+$body-color: $cijo-black-color;
+
+// fonts
+$font-family-base: 'Prompt';
+$font-family-second: 'Open Sans', sans-serif;
+
+$font-size-base: 1.4375rem;
+
+// headings
+$headings-font-weight: 700;
+
+// elements does not have border radius
+$border-radius:               0 !default;
+$border-radius-lg:            0 !default;
+$border-radius-sm:            0 !default;
+
+$cijo-box-shadow-main: 0 6px 24px 0 $cijo-black-opacity-color;

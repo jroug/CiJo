@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <!-- top scripts/meta data -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CiJo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Favicon -->
+        <!-- <link rel="shortcut icon" href="images/favicon.png"> -->
+
+        <!-- CSS files-->
+        <link rel="stylesheet" href="assets/css/main.css?v=1" />
+        <link rel="stylesheet" href="assets/css/libs/slick/slick.css" />
+        <link rel="stylesheet" href="assets/css/slick-theme.css" />
+    </head>
+    <body>   
+        <!-- header -->
+        <header>
+            <div class="container cijo-main-container">
+                <!-- row -->
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand" href="Home"><img src="assets/images/cijo-logo.svg" class="cijo-main-logo" alt="cijo-logo"/></a>
+                            <a href="#" class="cijo-button-burger" ><span>Menu</span></a>
+                            <div class="collapse navbar-collapse" id="navbarMain">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="01.Home.html">HOME <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <!-- <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PAGES</a> -->
+                                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" >PAGES</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                                            <a class="dropdown-item" href="02.About.html">ABOUT</a>
+                                            <a class="dropdown-item" href="09.Team.html">TEAM</a>
+                                            <a class="dropdown-item" href="10.Services.html">SERVICES</a>
+                                            <a class="dropdown-item" href="08.FAQ.html">FAQ</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="03.Projects.html" id="dropdown02" >PORTFOLIO</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdown02">
+                                            <a class="dropdown-item" href="04.ProjectPresentation.html">PROJECT PRESENTATION</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="dropdown03" >BLOG</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdown03">
+                                            <a class="dropdown-item" href="05a.Blog.html">BLOG RIGHT SIDEBAR</a>
+                                            <a class="dropdown-item" href="05b.BlogNoSidebar.html">BLOG NO SIDEBAR</a>
+                                            <a class="dropdown-item" href="05c.BlogLeftSidebar.html">BLOG LEFT SIDEBAR</a>
+                                            <a class="dropdown-item" href="06.BlogInner.html">BLOG POST</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="07.Contact.html">CONTACT</a>
+                                    </li>
+                                </ul>
+                                <form class="form-inline my-2 my-lg-0">
+                                    <div class="cijo-search-wrapper">
+                                        <input class="cijo-search-text" type="text" value="Search for...">
+                                        <button type="button" class="cijo-search-button"></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <!-- /row -->
+            </div>
+        </header>
+        <!-- /header -->
+        <!-- main -->
+        <main>
+            
+            <!-- section About -->
+            <section>
+                <div class="container cijo-main-container">
+                    <!-- row -->
+                    <div class="row">
+                        <div class="col-lg-6 col-md-10 col-12 cijo-mb-60">
+                            <h1>About us</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a justo mollis, feugiat lorem quis, euismod enim. Proin sed tortor lacus. Aenean id sapien nec ipsum tempor interdum sit amet sit amet nunc. Mauris a neque nec risus fermentum tempus. Aenean commodo mi blandit metus facilisis, in elementum odio consectetur. Phasellus sit amet libero non nisi efficitur ultricies. Vestibulum est sapien, dapibus vulputate maximus vel, blandit eu neque. Phasellus blandit molestie ligula nec ultrices. Cras dictum vestibulum facilisis.</p>
+                        </div>
+                    </div>
+                    <!-- /row -->
+                    <!-- row -->
+                    <div class="row">
+                        <div class="col-12 col-sm-10 offset-sm-1 col-lg-6 offset-lg-3 cijo-mb-40 text-center" >
+                            <div class="cijo-about-slider-wrapper" >
+                                <button class="cijo-about-slider-prev cijo-button-arrow-left" aria-label="Previous" type="button" >Previous</button>
+                                <div class="cijo-about-slider" >
+                                    <div>
+                                        <img class="img-responsive" src="assets/images/about-slide-1.png" alt="about-slide-1" />
+                                    </div>
+                                    <div>
+                                        <img class="img-responsive" src="assets/images/about-slide-1.png" alt="about-slide-2" />
+                                    </div>
+                                </div>
+                                <button class="cijo-about-slider-next cijo-button-arrow-right" aria-label="Next" type="button" >Next</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /row -->
+                </div>
+            </section>
+            <!-- /section About -->
+
+            <!-- section Services -->
+            <section class="cijo-services">
+                <div class="container cijo-main-container">
+                    <!-- row -->
+                    <div class="row">
+                        <div class="col-lg-6 col-md-10 col-12 cijo-mb-10">
+                            <h1>Our Services</h1>
+                        </div>
+                    </div>
+                    <!-- /row -->
+                    <!-- row -->
+                    <div class="row">
+                        <div class="cijo-services-col-left col-12 col-md-6" >
+                            <div class="cijo-services-image-wrapper overflow-hidden" >
+                                <img src="assets/images/user-experience.gif" id="i-1" class="active-image" alt="user experience" />
+                                <img src="assets/images/user-interface-design.gif" id="i-2"  alt="user interface design" />
+                                <img src="assets/images/branding.gif" id="i-3"  alt="branding" />
+                                <img src="assets/images/packaging.gif" id="i-4"  alt="packaging" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <!-- accordion Services -->
+                            <div class="accordion" id="accordionServices">
+                                <!-- services 1 -->
+                                <div class="card border-top-0 border-right-0 border-left-0 border-bottom active">
+                                    <div class="card-title" id="heading1">
+                                        <h2 class="cijo-services-h2">USER EXPERIENCE</h2>
+                                        <button class="btn btn-link button-open-services" data-image-selector="#i-1" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                            Plus
+                                        </button>
+                                    </div>
+                                    <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionServices">
+                                        <div class="card-body p-0">
+                                            <div class="cijo-services-text" >
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis quam nec aliquam pulvinar. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cijo-services-separator"></div>
+                                </div>
+                                <!-- /services 1 -->
+                                <!-- services 2 -->
+                                <div class="card border-top-0 border-right-0 border-left-0 border-bottom ">
+                                    <div class="card-title" id="heading2">
+                                        <h2 class="cijo-services-h2">USER INTERFACE DESIGN</h2>
+                                        <button class="btn btn-link  button-open-services collapsed" data-image-selector="#i-2"  type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                            Plus
+                                        </button>
+                                    </div>
+                                    <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionServices">
+                                        <div class="card-body p-0">
+                                            <div class="cijo-services-text" >
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis quam nec aliquam pulvinar. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cijo-services-separator"></div>
+                                </div>
+                                <!-- /services 2 -->
+                                <!-- services 3 -->
+                                <div class="card border-top-0 border-right-0 border-left-0 border-bottom ">
+                                    <div class="card-title" id="heading3">
+                                        <h2 class="cijo-services-h2">BRANDING</h2>
+                                        <button class="btn btn-link  button-open-services collapsed" data-image-selector="#i-3"  type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                            Plus
+                                        </button>
+                                    </div>
+                                    <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionServices">
+                                        <div class="card-body p-0">
+                                            <div class="cijo-services-text" >
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis quam nec aliquam pulvinar. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cijo-services-separator"></div>
+                                </div>
+                                <!-- /services 3 -->
+                                <!-- services 4 -->
+                                <div class="card border-top-0 border-right-0 border-left-0 border-bottom ">
+                                    <div class="card-title" id="heading4">
+                                        <h2 class="cijo-services-h2">PACKAGING</h2>
+                                        <button class="btn btn-link  button-open-services collapsed" data-image-selector="#i-4"  type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                            Plus
+                                        </button>
+                                    </div>
+                                    <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionServices">
+                                        <div class="card-body p-0">
+                                            <div class="cijo-services-text" >
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis quam nec aliquam pulvinar. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cijo-services-separator"></div>
+                                </div>
+                                <!-- /services 4 -->
+                            </div>
+                            <!-- /accordion Services -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /section Services -->
+
+            <!-- section Brands Slider -->
+            <section class="cijo-brands">
+                <div class="container cijo-main-container">
+                    <!-- row -->
+                    <div class="row">
+                        <div class="col-lg-6 col-md-10 col-12 cijo-mb-10">
+                            <h1>Our Brands</h1>
+                        </div>
+                    </div>
+                    <!-- /row -->
+                    <!-- row -->
+                    <div class="row overflow-hidden">
+                        <div class="col-1" >
+                            <button class="cijo-brands-prev slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button>
+                        </div>
+                        <div class="col-10" >
+                            <div class="cijo-brands-slider " >
+                                <div class="cijo-brands-slide" ><img src="assets/images/brand-1.jpg" alt="Brand Graphic" ></div>
+                                <div class="cijo-brands-slide" ><img src="assets/images/brand-2.jpg" alt="Brand Premioum" ></div>
+                                <div class="cijo-brands-slide" ><img src="assets/images/brand-3.jpg" alt="Brand Unique" ></div>
+                                <div class="cijo-brands-slide" ><img src="assets/images/brand-4.jpg" alt="Brand Unique"></div>
+                                <div class="cijo-brands-slide" ><img src="assets/images/brand-5.jpg" alt="Brand Graphic" ></div>
+                                <div class="cijo-brands-slide" ><img src="assets/images/brand-6-v2.jpg" alt="Brand Unique" ></div>
+                                <div class="cijo-brands-slide" ><img src="assets/images/brand-1.jpg" alt="Brand Graphic" ></div>
+                                <div class="cijo-brands-slide" ><img src="assets/images/brand-2.jpg" alt="Brand Premioum" ></div>
+                                <div class="cijo-brands-slide" ><img src="assets/images/brand-3.jpg" alt="Brand Unique" ></div>
+                                <div class="cijo-brands-slide" ><img src="assets/images/brand-4.jpg" alt="Brand Unique"></div>
+                                <div class="cijo-brands-slide" ><img src="assets/images/brand-5.jpg" alt="Brand Graphic" ></div>
+                                <div class="cijo-brands-slide" ><img src="assets/images/brand-6-v2.jpg" alt="Brand Unique" ></div>
+                            </div>
+                        </div>
+                        <div class="col-1" >
+                            <button class="cijo-brands-next slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button>
+                        </div>
+                    </div>
+                    <!-- /row -->
+                </div>
+            </section>
+            <!-- /section Brands -->
+
+            <!-- section TEAM -->
+            <section>
+                <div class="container cijo-main-container">
+                    <!-- row -->
+                    <div class="row">
+                        <div class="col-lg-6 col-md-10 col-12">
+                            <h1>Who we are</h1>
+                        </div>
+                    </div>
+                    <!-- /row -->
+                    <!-- row -->
+                    <div class="row">
+                        <!-- col 1 -->
+                        <div class="col-12 overflow-hidden">
+                            <div class="cijo-who-we-are-thumb-slider-wrapper" > 
+                                <button class="cijo-who-we-are-thumb-slider-prev cijo-button-arrow-left" aria-label="Previous" type="button" >Previous</button>
+                                <div class="cijo-who-we-are-thumb-slider" > 
+                                    <!-- thumb 1-->
+                                    <div class="cijo-team-thumb-wrapper">
+                                        <div class="cijo-team-thumb">
+                                            <div class="cijo-team-box">
+                                                <div class="cijo-team-info" >
+                                                    <div class="cijo-team-social" >
+                                                        <a href="#" class="cijo-linkedin"><img src="assets/images/linkedin.svg" alt="linkedin" /></a>
+                                                        <a href="#" class="cijo-email-icon"><img src="assets/images/email.svg" alt="email" /></a>
+                                                    </div>
+                                                    <div class="cijo-team-name" >MARIO SMITH</div>
+                                                </div> 
+                                                <img class="img-responsive" src="assets/images/member-1.png" alt="MARIO SMITH" >                                     
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /thumb 1-->
+                                    <!-- thumb 2-->
+                                    <div class="cijo-team-thumb-wrapper">
+                                        <div class="cijo-team-thumb">
+                                            <div class="cijo-team-box">
+                                                <div class="cijo-team-info" >
+                                                    <div class="cijo-team-social" >
+                                                        <a href="#" class="cijo-linkedin"><img src="assets/images/linkedin.svg" alt="linkedin" /></a>
+                                                        <a href="#" class="cijo-email-icon"><img src="assets/images/email.svg" alt="email" /></a>
+                                                    </div>
+                                                    <div class="cijo-team-name" >NATALIE WELCH</div>
+                                                </div> 
+                                                <img class="img-responsive" src="assets/images/member-2.png" alt="NATALIE WELCH" >                                     
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /thumb 2-->
+                                    <!-- thumb 3-->
+                                    <div class="cijo-team-thumb-wrapper">
+                                        <div class="cijo-team-thumb">
+                                            <div class="cijo-team-box">
+                                                <div class="cijo-team-info" >
+                                                    <div class="cijo-team-social" >
+                                                        <a href="#" class="cijo-linkedin"><img src="assets/images/linkedin.svg" alt="linkedin-image" /></a>
+                                                        <a href="#" class="cijo-email-icon"><img src="assets/images/email.svg" alt="email-image" /></a>
+                                                    </div>
+                                                    <div class="cijo-team-name" >JOHN LINCON</div>
+                                                </div> 
+                                                <img class="img-responsive" src="assets/images/member-3.png" alt="JOHN LINCON" >                                     
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /thumb 3-->
+                                    <!-- thumb 4-->
+                                    <div class="cijo-team-thumb-wrapper">
+                                        <div class="cijo-team-thumb">
+                                            <div class="cijo-team-box">
+                                                <div class="cijo-team-info" >
+                                                    <div class="cijo-team-social" >
+                                                        <a href="#" class="cijo-linkedin"><img src="assets/images/linkedin.svg" alt="linkedin" /></a>
+                                                        <a href="#" class="cijo-email-icon"><img src="assets/images/email.svg" alt="email" /></a>
+                                                    </div>
+                                                    <div class="cijo-team-name" >SARAH LAWRENCE</div>
+                                                </div> 
+                                                <img class="img-responsive" src="assets/images/member-4.png" alt="SARAH LAWRENCE" >                                     
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /thumb 4-->
+                                    <!-- thumb 5-->
+                                    <div class="cijo-team-thumb-wrapper">
+                                        <div class="cijo-team-thumb">
+                                            <div class="cijo-team-box">
+                                                <div class="cijo-team-info" >
+                                                    <div class="cijo-team-social" >
+                                                        <a href="#" class="cijo-linkedin"><img src="assets/images/linkedin.svg" alt="linkedin" /></a>
+                                                        <a href="#" class="cijo-email-icon"><img src="assets/images/email.svg" alt="email" /></a>
+                                                    </div>
+                                                    <div class="cijo-team-name" >CLAIRE HOLLAND</div>
+                                                </div> 
+                                                <img class="img-responsive" src="assets/images/member-5.png" alt="CLAIRE HOLLAND" >                                     
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /thumb 5-->
+                                    <!-- thumb 6-->
+                                    <div class="cijo-team-thumb-wrapper">
+                                        <div class="cijo-team-thumb">
+                                            <div class="cijo-team-box">
+                                                <div class="cijo-team-info" >
+                                                    <div class="cijo-team-social" >
+                                                        <a href="#" class="cijo-linkedin"><img src="assets/images/linkedin.svg" alt="linkedin" /></a>
+                                                        <a href="#" class="cijo-email-icon"><img src="assets/images/email.svg" alt="email" /></a>
+                                                    </div>
+                                                    <div class="cijo-team-name" >MARIA VENTURA</div>
+                                                </div> 
+                                                <img class="img-responsive" src="assets/images/member-6.png" alt="MARIA VENTURA" >                                     
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /thumb 6-->
+                                    <!-- thumb 7-->
+                                    <div class="cijo-team-thumb-wrapper">
+                                        <div class="cijo-team-thumb">
+                                            <div class="cijo-team-box">
+                                                <div class="cijo-team-info" >
+                                                    <div class="cijo-team-social" >
+                                                        <a href="#" class="cijo-linkedin"><img src="assets/images/linkedin.svg" alt="linkedin-age" /></a>
+                                                        <a href="#" class="cijo-email-icon"><img src="assets/images/email.svg" alt="email" /></a>
+                                                    </div>
+                                                    <div class="cijo-team-name" >JESSICA TORTURO</div>
+                                                </div> 
+                                                <img class="img-responsive" src="assets/images/member-7.png" alt="JESSICA TORTURO" >                                     
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /thumb 7-->
+                                    <!-- thumb 8-->
+                                    <div class="cijo-team-thumb-wrapper">
+                                        <div class="cijo-team-thumb">
+                                            <div class="cijo-team-box">
+                                                <div class="cijo-team-info" >
+                                                    <div class="cijo-team-social" >
+                                                        <a href="#" class="cijo-linkedin"><img src="assets/images/linkedin.svg" alt="linkedin" /></a>
+                                                        <a href="#" class="cijo-email-icon"><img src="assets/images/email.svg" alt="email" /></a>
+                                                    </div>
+                                                    <div class="cijo-team-name" >JACK NICKOLSON</div>
+                                                </div> 
+                                                <img class="img-responsive" src="assets/images/member-8.png" alt="JACK NICKOLSON" >                                     
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /thumb 8-->
+                                </div>
+                                <button class="cijo-who-we-are-thumb-slider-next cijo-button-arrow-right" aria-label="Next" type="button" >Next</button>
+                            </div>
+                        </div>
+                        <!-- /col 8 -->
+                    </div>
+                    <!-- /row -->
+                </div>
+            </section>
+            <!-- /section TEAM -->
+
+        </main>
+        <!-- /main -->
+        <!-- footer -->
+        <footer class="bg-black text-white">
+            <div class="container cijo-main-container">
+                <div class="row cijo-footer-main-row">
+                    <div class="col-12 mb-4 align-self-top">
+                        <div class="row">
+                            <h2 class="cijo-newsletter-h2">Sign up to our Newsletter</h2>
+                        </div>
+                        <div class="row cijo-newsletter-wrapper">
+                            <input class="cijo-newsletter-input" type="text" value="Your email" />
+                            <button class="cijo-button-arrow-right"></button>
+                        </div>
+                        <div class="row cijo-social">
+                            <a href="#" class="cijo-social-link fb" >facebook</a>
+                            <a href="#" class="cijo-social-link inst" >instagram</a>
+                            <a href="#" class="cijo-social-link tw" >twitter</a>
+                        </div>
+                        <div class="row cijo-footer-contact">
+                            <a href="#" class="cijo-email" >info@cijo.com</a><span class="cijo-separator">|</span><a href="#" class="cijo-phone" >+00 1 718 893 3900</a>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center col-sm-6 text-sm-left align-self-end">
+                        <p>© 2020 All Rights Reserved by CiJo</p>
+                    </div>
+                    <div class="col-12 text-center col-sm-6 text-sm-right align-self-end">
+                        <p><a href="#" >Terms of use</a> | <a href="#" >Privacy Policy</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer> 
+        <!-- /footer -->
+        <!-- scripts -->
+        <script src="assets/js/libs/jquery/jquery.slim.min.js"></script>
+        <script src="assets/js/libs/bootstrap/bootstrap.bundle.min.js" ></script>
+        <script src="assets/js/main.js" ></script>
+        <script src="assets/js/libs/slick/slick.min.js"></script>
+        <script>
+            $(document).ready( function() {
+                /*** about slider ***/
+                $(".cijo-about-slider").slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    prevArrow: $('.cijo-about-slider-prev'),
+                    nextArrow: $('.cijo-about-slider-next')
+                });
+                /*** services section ***/
+                $('.button-open-services').click(function(){
+                    if ( $(this).parent().parent().hasClass('active') ){
+                        return false;
+                    }else{
+                        $('.active').removeClass('active');
+                        $(this).parent().parent().addClass('active');
+                    }
+                    $('.active-image').removeClass('active-image');
+                    var imageSelector = $(this).data('image-selector');
+                    $(imageSelector).addClass('active-image');
+                });
+                /*** brands section ***/
+                $(".cijo-brands-slider").slick({
+                    slidesToShow: 6,
+                    slidesToScroll: 3,
+                    prevArrow: $('.cijo-brands-prev'),
+                    nextArrow: $('.cijo-brands-next'),
+                    responsive: [
+                        {
+                            breakpoint: 1260,
+                            settings: {
+                            slidesToShow: 5,
+                            slidesToScroll: 4,
+                            }
+                        },
+                        {
+                            breakpoint: 960,
+                            settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 3,
+                            }
+                        },
+                        {
+                            breakpoint: 720,
+                            settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 2,
+                            }
+                        },
+                        {
+                            breakpoint: 540,
+                            settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            }
+                        }
+                    ]
+                });
+                /*** who we are slider ***/
+                $(".cijo-who-we-are-thumb-slider").slick({
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    prevArrow: $('.cijo-who-we-are-thumb-slider-prev'),
+                    nextArrow: $('.cijo-who-we-are-thumb-slider-next'),
+                    responsive: [
+                        {
+                            breakpoint: 1260,
+                            settings: {
+                            slidesToShow: 3,
+                            }
+                        },
+                        {
+                            breakpoint: 960,
+                            settings: {
+                            slidesToShow: 2,
+                            }
+                        },
+                        {
+                            breakpoint: 720,
+                            settings: {
+                            slidesToShow: 1,
+                            }
+                        }
+                    ]
+                });
+            });
+        </script>
+        <!-- /scripts -->
+    </body>
+</html>
